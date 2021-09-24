@@ -109,6 +109,13 @@
                 android:text="Start"
                 android:height="70dp"/>
 
+            <Button
+                android:id="@+id/btnBrokenStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Test"
+                android:height="70dp"/>
+
             <TextView
                 android:id="@+id/txtStatus"
                 android:layout_width="fill_parent"

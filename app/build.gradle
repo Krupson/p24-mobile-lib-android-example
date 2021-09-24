@@ -32,11 +32,22 @@ android {
         p24()
     }
 
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
 }
 
 dependencies {
     implementation "pl.przelewy24:p24lib:+"
     implementation 'com.google.android.gms:play-services-wallet:16.0.1' //necessary if google pay used
     implementation 'com.google.android.gms:play-services-safetynet:+' //necessary if safetynet function enabled
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+
+    // ConstraintLayout
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+
+    // Material
+    implementation 'com.google.android.material:material:1.3.0'
 }

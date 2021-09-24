@@ -42,6 +42,7 @@ public class P24ExampleActivity extends AppCompatActivity {
 	private static final String TEST_CRC_SECURE = "b36147eeac447028";
 
 	private Button btnBuy;
+	private Button btnBrokenStyle;
 	private TextView txtStatus;
 
 	private SwitchCompat switchSandbox;
@@ -58,6 +59,7 @@ public class P24ExampleActivity extends AppCompatActivity {
 		txtStatus.setVisibility(View.GONE);
 
 		btnBuy = findViewById(R.id.btnBuy);
+		btnBrokenStyle = findViewById(R.id.btnBrokenStyle);
 		switchSandbox = findViewById(R.id.swithcSandbox);
 		radioGroup = findViewById(R.id.radioGroup);
 		etToken = findViewById(R.id.token);
@@ -90,6 +92,15 @@ public class P24ExampleActivity extends AppCompatActivity {
 						startCardRegister();
 						break;
 				}
+			}
+		});
+
+		btnBrokenStyle.setOnClickListener(new View.OnClickListener() {
+
+			@Override
+			public void onClick(View arg0) {
+				final Intent intent = new Intent(P24ExampleActivity.this, BrokenStyleActivity.class);
+				startActivity(intent);
 			}
 		});
 

@@ -13,6 +13,7 @@
     <application
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme" android:allowBackup="true">
         <activity
             android:name=".P24ExampleActivity"
@@ -45,6 +46,8 @@
             android:name="pl.przelewy24.p24lib.card.RegisterCardActivity"
             android:configChanges="keyboardHidden|orientation|keyboard|screenSize">
         </activity>
+
+        <activity android:name=".BrokenStyleActivity" />
 
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
